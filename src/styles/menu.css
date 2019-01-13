@@ -1,0 +1,23 @@
+.page-header.navbar {
+    background-color: white;
+}
+
+.page-header.navbar .hor-menu .navbar-nav > li.mega-menu-dropdown > .dropdown-menu .mega-menu-content .mega-menu-submenu li > h3, .page-header.navbar .hor-menu .navbar-nav > li > a {
+    color: black;
+}
+
+.page-header.navbar .hor-menu .navbar-nav > li:hover > a, .page-header.navbar .hor-menu .navbar-nav > li > a:hover {
+    background: #331500 !important;
+}
+
+.page-header.navbar .hor-menu .navbar-nav > li .dropdown-menu {
+    background: white;
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li:hover > a, .dropdown-menu > li > a:hover {
+    background: #331500 !important;
+}
+
+.page-header.navbar .hor-menu .navbar-nav > li .dropdown-menu li > a, .page-header.navbar .hor-menu .navbar-nav > li .dropdown-menu li > a > i {
+    color: #000000;
+}
