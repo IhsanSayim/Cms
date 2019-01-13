@@ -5,7 +5,7 @@ import List from "./List";
 
 
 
-export default class Slider extends Component {
+export class Slider extends Component {
     displayName = Slider.name
 
     state = {

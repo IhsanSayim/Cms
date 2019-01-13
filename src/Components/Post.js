@@ -14,12 +14,21 @@ export class Post extends Component {
         super(props)
     }
     componentDidMount() {
-        axios.get(`https://localhost:44341/api/subpages/getposts`)
-            .then(res => {
-                const posts = res.data;
-                this.setState({posts});
-            }).catch({
-        })
+        if(this.props.postId){
+            axios.get(`https://localhost:44341/api/subpages/getposts/`+this.props.postId)
+                .then(res => {
+                    const posts = res.data;
+                    this.setState({posts});
+                }).catch({
+            })
+        }else{
+            axios.get(`https://localhost:44341/api/subpages/getposts`)
+                .then(res => {
+                    const posts = res.data;
+                    this.setState({posts});
+                }).catch({
+            })
+        }
     }
 
 
@@ -47,7 +56,6 @@ export class Post extends Component {
                                     </div>
                                 </div>
                             </div>
-
                         )}
                     </div>
                 </div>
