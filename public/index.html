@@ -11,8 +11,26 @@
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    -->    <base href="%PUBLIC_URL%/" />
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css">
+    <link href="./assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+    <link href="./assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css">
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="./assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css">
+    <link href="./assets/global/css/plugins.min.css" rel="stylesheet" type="text/css">
+    <!-- END THEME GLOBAL STYLES -->
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <link href="./assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css">
+    <link href="./assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color">
+    <link href="./assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css">
+    <link href="./assets/pages/css/blog.min.css" rel="stylesheet" type="text/css">
+    <!-- END THEME LAYOUT STYLES -->
+    <link rel="shortcut icon" href="favicon.ico">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,9 +42,11 @@
     -->
     <title>React App</title>
   </head>
-  <body>
+  <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-full-width" style="background-color: white;">
+  <div class="page-wrapper">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+  </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -37,5 +57,22 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+  <script src="./assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+  <script src="./assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="./assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+  <script src="./assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+  <script src="./assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+  <script src="./assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+  <!-- END CORE PLUGINS -->
+  <!-- BEGIN THEME GLOBAL SCRIPTS -->
+  <script src="./assets/global/scripts/app.min.js" type="text/javascript"></script>
+  <script src="./assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+  <script src="./assets/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>
+  <script src="./assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+  <script src="./assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+  <script src="./assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://paracevirici.com/servis/widget/widget.js"></script>
   </body>
+
 </html>
